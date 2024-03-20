@@ -1,0 +1,63 @@
+.form_selectcontainer{
+    width:90%;
+    border-radius: 10px;
+    display:flex;
+    gap:1rem;
+    flex-direction: column;
+    padding-top:10px;
+    margin-bottom: 25px;
+    align-self: center;
+    margin-bottom: 20px;
+
+
+}
+.form_selectcontainer .categoryhead{
+    display:flex;
+    margin-left:5px;
+    gap:5rem;
+    margin-bottom: 20px;
+}
+
+.form_selectcontainer .categoryhead span{
+    width: 40px;
+    height:40px;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: rgb(112, 80, 104);
+
+}
+
+.form_selectcontainer .categoryhead h3{
+    margin-top: 5px;
+    font-size:1.4rem;
+    font-weight: 700;
+    color:rgb(145, 144, 144);
+    margin-left: 10px;
+}
+.form_selectcontainer .categorybody{
+    height:50px;
+    border-radius:10px;
+    margin-left:5px;
+}
+
+.form_selectcontainer .categorybody select{
+    
+    background-color:var(--color-fade);
+    width:100%;
+    height:65px;
+    text-align: center;
+    border-radius:5px;
+    color:var(--color-form);
+    font-size: 1rem;
+    font-weight:600;
+    padding-left:50px
+}
+
+
+.form_selectcontainer h3{
+    font-size:1.5rem;
+    font-weight:400
+}

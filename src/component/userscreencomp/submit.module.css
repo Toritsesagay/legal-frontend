@@ -1,0 +1,72 @@
+.buttonOuterContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+ .buttonContainer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    row-gap: 0px;
+    place-items: center;
+    margin-left:8%;
+    margin-right: 2%;
+
+}
+
+ .buttonContainer button,
+ .submitCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ button {
+    font-size: 2rem;
+    font-family: Poppins;
+    font-weight: 300;
+    background-color: transparent;
+
+}
+
+
+ .buttonContainer button {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+ .submitCon {
+    width: 100%;
+}
+
+ .submitCon button {
+    width: 100%;
+    padding: 12px 0px 12px 0px;
+    border-radius: 5px;
+    color: var(--color-background);
+    background-color: var(--color-blue);
+    font-size: 1.3rem;
+
+}
+
+
+@media screen and (max-width: 750px) {
+    
+    .buttonContainer button {
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+    
+    }
+    .submitCon button {
+        padding: 15px 0px 15px 0px;
+        width:100%;
+    
+    }
+   
+}

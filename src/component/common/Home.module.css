@@ -1,0 +1,744 @@
+/* styling the homesccreen*/
+.homeScreen {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    overflow-y: scroll;
+    border-bottom: none;
+    height: 100vh;
+}
+
+.homeScreen .timeline {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+    padding: 24px;
+    position: relative;
+}
+
+.homeScreen .timeline h1 {
+    margin-bottom: 40px;
+}
+
+.homeScreen .timeline .filter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+
+.homeScreen .timeline .filter .searchContainer {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.homeScreen .timeline .filter .searchBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    border-radius: 5px;
+    border: 1px solid var(--color-fader);
+    border-radius: 5px;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.homeScreen .timeline .filter .searchContainer .input {
+    width: 100%;
+    height: 50px;
+}
+
+.homeScreen .timeline .filter .searchContainer .input::placeholder {
+    font-size: 1.3rem;
+    color: var(--fadeText)
+}
+
+.homeScreen .timeline .filter .searchContainer span {
+    color: var(--fadeText)
+}
+
+
+
+.homeScreen .timeline .filter .dateFilter {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeScreen .timeline .filter .dateFilter button {
+    width: 200px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: var(--color-blue);
+    color: var(--color-background)
+}
+
+/* the table styles */
+
+.tableContainer {
+    overflow-x: scroll;
+    width: 100%;
+
+}
+
+.tableContainer .emptyContainer{
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.tableContainer .emptyContainer p{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.tableContainer .emptyContainer button{
+    padding-top: 12px;
+    padding-bottom:12px;
+    width: 200px;
+    font-size: 1rem;
+    font-family: Poppins;
+}
+
+
+.tableContainer table {
+    table-layout: fixed;
+    display:table;
+    max-width:3000px
+
+}
+
+.tableContainer table thead {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.tableContainer table tr {
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.tableContainer table tr:nth-child(odd) {
+    background-color: var(--color-fade);
+
+}
+
+.tableContainer table tr:hover {
+    background-color: var(--color-light-fade);
+    border: 1px solid var(--color-fader);
+
+
+}
+
+.tableContainer table th {
+    width: 230px;
+    color: var(--fadeText);
+    font-size: 1.1rem;
+
+}
+
+.tableContainer table td {
+    color: var(--fadeText);
+    font-size: 1.1rem;
+    min-width:200px;
+    overflow-x: scroll;
+    text-align: center;
+
+}
+
+
+.tableContainer table tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%
+}
+
+
+/* styling the create campaign screen */
+.heading{
+    font-size: 1.5rem;
+}
+.CreateCampaignForm {
+    border: 1px solid var(--color-fade);
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 5px;
+    padding:20px
+}
+
+.CreateCampaignForm .label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--fadeText);
+}
+
+.CreateCampaignForm .label span {
+    margin-right: 5px;
+}
+
+.CreateCampaignForm .formInput {
+    height: 50px;
+    background-color: var(--color-fade);
+    border-radius: 3px;
+    width:320px;
+    margin-bottom: 25px;
+    padding:10px;
+    font-family: Poppins;
+    font-size: 1rem
+}
+
+
+.CreateCampaignForm .conversionsContainer {
+    display: flex;
+    width: 60%;
+}
+
+.CreateCampaignForm .conversionsContainerLeft {
+    margin-right: 20%;
+
+}
+
+.CreateCampaignForm .conversionsContainer {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+
+.CreateCampaignForm .checkBoxesContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.checkecked{
+    background-color: blue;
+}
+
+.CreateCampaignForm .checkBoxesContainer .checkboxes {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 1px solid var(--color-fader);
+    margin-right: 10px;
+}
+
+
+.CreateCampaignForm .checkBoxesContainer p {
+    font-size: 1.2rem;
+
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px
+}
+
+.buttonContainer button {
+    width: 100px;
+    padding: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 2px;
+    background-color: var(--color-blue);
+    color: #fff;
+}
+
+.durationContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+
+}
+
+.durationContainer .description{
+    width:80%
+}
+
+.description p{
+    color:var(--fadeText);
+    font-size: 1.1rem;
+}
+
+
+.durationContainer  .durationButton{
+    width:170px;
+    height: 40px;
+    background-color: var(--color-fade);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.durationContainer  .button{
+    padding:5px 10px 5px 10px;
+    border-radius: 20px;
+    font-family: Poppins;
+    
+}
+
+
+.durationContainer  .button:nth-of-type(1){
+    background-color: var(--color-background);
+    
+}
+.durationContainer  .button button{
+    background-color: transparent;
+}
+
+/* styling the cards */
+
+.cardContainer{
+    display:flex
+
+
+}
+
+
+.cardContainer .card{
+    width: 190px;
+    height: 250px;
+    border-radius: 10px;
+    /*border: 1px solid var(--color-fader);*/
+    margin-right: 20px;
+    box-shadow: 3px 0px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.cardContainer .card .title_1,.cardContainer .card .title_2,.cardContainer .card .title_3{
+    padding-left: 10px;
+    padding-right:10px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(75, 142, 151);
+    text-align: center;
+    color:var(--color-background);
+    margin-bottom: 20px;
+    justify-self: flex-start;
+}
+
+
+
+.cardContainer .card .title_2{
+    background-color: rgb(86, 75, 151);
+}
+
+.cardContainer .card .title_3{
+    background-color: rgb(151, 75, 141);
+}
+
+.cardContainer .card .durationText{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+.cardContainer .card .price{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+.cardContainer .card button{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 80%;
+    background-color: var(--color-blue);
+    color:var(--color-background);
+    border-radius: 2px;
+}
+
+
+.timelineHeading{
+    color:var(--fadeText);
+    font-size:1.7rem;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.editForm{
+    width:100%
+}
+
+.inputCards{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin-bottom:30px
+
+}
+.inputCards label{
+    font-size:1.3rem;
+    margin-bottom: 10px;
+    font-weight:300;
+    color:var(--fadeText)
+}
+
+.inputCards input{
+    width:80%;
+    height:55px;
+    background-color: var(--color-fade);
+    padding:10px;
+    font-size: 1rem;
+    font-family: Poppins;
+}
+
+
+.inputCards img{
+    width:80%;
+    padding:10px;
+}
+
+.buttonContainer{
+    width:80%;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.buttonContainer button{
+    width:100px;
+    height:50px;
+    border-radius:5px;
+    background-color: var(--color-blue);
+    color:var(--color-background)
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+
+
+    .homeScreen .timeline {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* styling the asset screen*/
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .homeScreen {
+        display: flex;
+    }
+
+    .homeScreen .timeline {
+        width: 100%;
+        padding: 15px;
+
+    }
+
+    .CreateCampaignForm .conversionsContainer {
+        display: flex;
+        width: 90%;
+    
+    }
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+    .durationContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    
+    }
+
+    .description p{
+        margin-bottom: 30px;
+    }
+
+
+    .cardContainer{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+    
+    }
+
+    .cardContainer .card{
+        margin-bottom: 50px;
+        width: 250px;
+    
+    
+    }
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 520px) {
+
+    .homeScreen .timeline .filter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    .homeScreen .timeline .filter .searchContainer {
+        margin-bottom: 20px;
+    }
+
+    .homeScreen .timeline .filter .dateFilter {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .homeScreen .timeline .filter .dateFilter button {
+        width: 60%
+    }
+    .CreateCampaignForm {
+        width: 100%;
+    }
+
+
+    .CreateCampaignForm .formInput {
+        width: 100%;
+    }
+
+    .buttonContainer{
+        width:100%;
+        display:flex;
+        justify-content: flex-end;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .CreateCampaignForm .conversionsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .CreateCampaignForm .label {
+        font-size: 1.1rem;
+
+        
+    }
+    .checkBoxesContainer p{
+        font-size: 1rem;
+
+    }
+
+    .inputCards input{
+        width:100%;
+    }
+
+    .inputCards label{
+        font-size:1.2rem
+    }
+}
+
+
+
+/*
+
+
+const CampaignSchema = new mongoose.Schema({
+    _id: mongoose.Schema.Types.ObjectId,
+    campaign_client__id: {
+        type: String,
+        default:'customer'+ Math.random().toString().slice(2, 5) + Math.random().toString().slice(2, 5)
+    },
+    campaign_id: {
+        type: String,
+    },
+    dateOfCreation: {
+        type: Date,
+        default: Date.now
+    },
+    status: {
+        type: String,
+        default: 'pending'
+    },
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User"
+    },
+
+    website:{
+        type:String,
+    },
+
+    expected_conversions:{
+        type:String
+    },
+    subscription_plan:{
+        type:String
+    },
+    campaignName:{
+        type:String
+    },
+    conversions:{
+        type:String
+    },
+    impressions:{
+        type:String
+    },
+    clicks:{
+        type:String
+    },
+   
+    campaignPlatform:{
+        type:String
+    },
+    possible_conversions:[{
+        type:String
+    }],
+    advertisementType:[{
+        type:String
+    }],
+    
+
+})
+
+
+
+
+*/
+
+
+@media screen and (max-width: 450px) {
+    .description p{
+        font-size: .9rem;
+    }
+
+    .tableContainer .emptyContainer{
+        width:100%;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    
+
+}
+
+
+@media screen and (max-width: 319px) {
+
+    
+
+    .homeScreen .timeline .filter .searchContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .homeScreen .timeline .filter .dateFilter button {
+        width: 80%
+    }
+}
+
+@media screen and (max-width: 319px) {
+
+    
+
+    .homeScreen .timeline .filter .searchContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .homeScreen .timeline .filter .dateFilter button {
+        width: 80%
+    }
+
+}
+
+@media screen and (max-width: 260px) {
+
+    .durationContainer  .durationButton{
+        width:100%;
+    
+    }
+
+    .heading{
+        font-size: 1.1rem;
+    }
+
+
+    .cardContainer .card{
+        width:90%
+    
+    
+    }
+
+}

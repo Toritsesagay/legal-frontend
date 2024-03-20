@@ -1,0 +1,22 @@
+.btn_container{
+    width:100%;
+    padding-top:13px;
+    padding-bottom:13px;
+    background: var(--color-blue);
+    border-radius:30px;
+    margin-top:20px;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    z-index:0;
+}
+
+.btn_container text{
+    font-family:Poppins;
+    color:#fff;
+    margin:auto;
+    display:inline;
+    font-size: 1.1rem;
+    font-weight: 900;
+}

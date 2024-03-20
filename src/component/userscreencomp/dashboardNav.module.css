@@ -1,0 +1,201 @@
+.dashboardheader {
+    width: 100%;
+    height: 11vh;
+    border: 1px solid var(--color-fade);
+    display: flex;
+   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+    margin-bottom: 0px;
+}
+
+.dashboardheader .headerleft {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.dashboardheader .headerleft .title {
+    font-size: 1.5rem;
+    padding-left: 0px;
+    color:var(--fadeText)
+    
+}
+
+.dashboardheader .headerleft .name {
+    font-size: 1.2rem;
+    display:none
+}
+
+.dashboardheader .headerleft .logo {
+    display: none;
+    color: var(--color-blue);
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.dashboardheader .headerright {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.dashboardheader .headerrightinner {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.headerrightinner button {
+    padding: 12px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    background-color: var(--color-blue);
+    color: var(--background-color);
+    font-weight: 600;
+}
+
+.headerrightinner button:nth-of-type(2) {
+    background-color: var(--color-fade);
+    color: var(--color-black)
+}
+
+.headerrightinner span {
+    padding: 10px;
+    border-radius: 100%;
+    background-color: var(--color-fade);
+    font-size: 1.6rem;
+    margin-right: 10px;
+}
+
+.headerrightinner .span {
+    color: var(--color-background);
+    display: none;
+
+}
+
+
+.headerrightinner .profileimage {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.headerrightinner .profileimage span {
+    color: var(--color-background);
+    background-color:var(--color-fader);
+    font-size:2.5rem;
+    width:40px;
+    height:40px;
+    border-radius:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.headerrightinner .menu {
+    display: none;
+}
+
+/*styling the notification container*/
+.notificationContainer{
+    position:relative
+}
+
+.notificationContainer span:nth-of-type(2){
+    position:absolute;
+    top:0px;
+    left:20px
+}
+
+@media screen and (max-width: 1200px) {
+    .dashboardheader .headerright {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+
+    .dashboardheader .headerrightinner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+
+    .dashboardheader .headerleft {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+    .dashboardheader .headerright {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 0px;
+    }
+
+    .dashboardheader .headerleft h1 {
+        display: none;
+    }
+    .dashboardheader .headerleft .name {
+        font-size: 1.5rem;
+        display:block;
+        padding-left: 15px;
+    }
+
+    .dashboardheader .headerleft .logo {
+        display: block;
+        margin-left: 10px;
+    }
+    
+
+    .headerrightinner button {
+        display: none
+    }
+
+    .headerrightinner .profileimage {
+        display: none;
+        
+    }
+
+    .headerrightinner .menu {
+        display:flex
+    }
+
+    .headerrightinner .menu span{
+        margin-right:0px
+    }
+
+    .dashboardheader .headerleft h1 {
+        display: none;
+    }
+
+
+
+
+
+
+}
+
+

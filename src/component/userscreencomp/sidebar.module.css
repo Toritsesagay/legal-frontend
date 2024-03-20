@@ -1,0 +1,230 @@
+/* styling he sidebar */
+.sidebar {
+    width: 100%;
+    border: 1px solid var(--color-fade);
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
+    padding-left: 15px;
+    position: relative;
+    height: 100%;
+    z-index: 2000;
+    /*color:#475883;*/
+    background-color: var(--color-light-fade);
+    
+    box-shadow: 3px 0px 5px rgba(0,0,0,0.1);
+
+}
+
+
+.sidebar .topSection {
+    margin-bottom: 35px;
+    z-index: 2000;
+}
+
+.sidebar .topSection h1 {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.sidebar .topSection .logoContainer {
+    width: 90%;
+    height: 100px;
+    padding-left: 10px;
+    display: none;
+    padding-top: 10px
+}
+
+.sidebar .topSection .logoContainer img {
+    width: 50%;
+}
+
+.sidebar .middleSection {
+    padding-bottom: 70px;
+    z-index: 2000;
+    border-bottom: 1px solid var(--color-fader);
+}
+
+.sidebar .middleSection li {
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    color:var(--fadeText);
+    font-weight: 500;
+    
+
+}
+
+.sidebar .middleSection div {
+    display: none
+}
+
+.sidebar .middleSection li:hover {
+    background-color: var(--color-fade);
+}
+
+.sidebar .middleSection span {
+    margin-right: 10px;
+    font-size: 2rem;
+    color:var(--fadeText);
+
+}
+
+.sidebar .bottomSection {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 90px;
+    background-color: var(--color-fade);
+    display: flex;
+    border-radius: 20px;
+    z-index: 2000;
+}
+
+.sidebar .imgCon {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .imgCon img {
+    width: 50%
+}
+
+.sidebar .textCon {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.sidebar .textCon h1 {
+    font-size: 1.5rem;
+}
+
+.sidebar .textCon p {
+    font-size: 1.1rem;
+}
+
+
+
+
+.sidebar .endSection {
+    padding-top:30px
+}
+
+.listText{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.sidebar .endSection div{
+    width: 90%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    color:var(--fadeText);
+    font-weight: 500;
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .endSection{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .sidebar .bottomSection {
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    .sidebar .topSection {
+        margin-bottom: 20px;
+    }
+
+    .sidebar .topSection h1 {
+        display: none;
+    }
+
+    .sidebar .topSection .logoContainer {
+        display: block
+    }
+
+    .sidebar .middleSection li {
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 30px;
+        justify-content: center;
+    }
+    
+
+    .sidebar .middleSection li:hover div{
+        display:block;
+        width:90px;
+        height:40px;
+        background-color:var(--color-black);
+        position:absolute;
+        border-radius: 5px;
+        left:80px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:var(--color-fade);
+        font-size: 1rem;
+        transition: 2s ease;
+        visibility: visible;
+
+    }
+
+    
+
+
+    .sidebar .middleSection li p {
+        display: none
+    }
+
+    .sidebar .textCon {
+        display: none
+    }
+
+    .sidebar .imgCon {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar .imgCon img {
+        width: 50%
+    }
+}
+
+
+@media screen and (max-width: 750px) {}
+
+
+
+@media screen and (max-width: 520px) {}

@@ -1,0 +1,50 @@
+
+/* styling trade error screen */
+.tradeErrorCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    height: 80%;
+    width: 83%;
+    text-align: center;
+    overflow-y: scroll;
+    padding-bottom: 80px;
+}
+.tradeErrorCon img{
+    margin-bottom:30px
+}
+
+.tradeErrorCon h1 {
+    font-size: 2rem
+}
+
+.tradeErrorCon p {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 80%;
+    color: var(--fadeText);
+    margin-bottom: 20px
+}
+
+.tradeErrorCon button {
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    /*styling tradescreen*/
+
+
+    /* styling trade error screen */
+    .tradeErrorCon {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 200px;
+    }
+
+}
